@@ -1,0 +1,10 @@
+version: '3.7'
+services:
+  pcsc_scan:
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    image: kurukurumaware/pcsc_scan:latest
+    container_name: pcsc_scan
+    volumes:
+      - /var/run:/var/run    
